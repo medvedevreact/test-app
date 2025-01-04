@@ -115,11 +115,7 @@ export async function POST(req: NextRequest) {
 
     const response = NextResponse.json(updatedCart);
     if (!req.cookies.get("cartToken")) {
-      response.cookies.set("cartToken", token, {
-        httpOnly: true,
-        maxAge: 60 * 60 * 24 * 30, // 30 дней
-        path: "/",
-      });
+      response.cookies.set("cartToken", token);
     }
 
     return response;
