@@ -1,4 +1,6 @@
 {
-  "/(root)/page": "app/(root)/page.js",
-  "/(root)/@modal/(.)product/[id]/page": "app/(root)/@modal/(.)product/[id]/page.js"
+  "/api/ingredients/route": "app/api/ingredients/route.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/cart/route": "app/api/cart/route.js",
+  "/(root)/page": "app/(root)/page.js"
 }
